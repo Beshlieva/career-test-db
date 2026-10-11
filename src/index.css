@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@300;400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-sans: 'Nunito', system-ui, sans-serif;
+
+  --color-cream: #FAF8F3;
+  --color-cream-dark: #F2EEE6;
+  --color-ink: #2A2520;
+  --color-ink-muted: #7A726A;
+  --color-ink-faint: #B5AFA8;
+
+  /* Answer spectrum — pastel */
+  --color-answer-vp:   #FEF3C7; /* Очень нравится — amber-100 */
+  --color-answer-vp-b: #F59E0B; /* border */
+  --color-answer-vp-s: #FDE68A; /* selected bg */
+
+  --color-answer-p:    #FEF9C3; /* Нравится — yellow-100 */
+  --color-answer-p-b:  #D4A000;
+  --color-answer-p-s:  #FEF08A;
+
+  --color-answer-n:    #F4F3F1; /* Не знаю — warm gray */
+  --color-answer-n-b:  #9CA3AF;
+  --color-answer-n-s:  #E5E3DE;
+
+  --color-answer-np:   #FDE8DC; /* Не нравится — terracotta */
+  --color-answer-np-b: #C97048;
+  --color-answer-np-s: #FAD4BF;
+
+  --color-answer-vnp:  #FDE0D8; /* Очень не нравится — coral */
+  --color-answer-vnp-b:#C4614E;
+  --color-answer-vnp-s:#FACBC0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+}
+
+/* Scrollbar hidden by default, visible on scroll */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-ink-faint); border-radius: 3px; }
+* { scrollbar-width: thin; scrollbar-color: var(--color-ink-faint) transparent; }
